@@ -12,9 +12,9 @@ ratio = st.number_input("Ratio (collagen : HNE = 1 : N), enter N", min_value=0.0
 
 # Stock settings (rarely change)
 with st.expander("Stock settings"):
-    col_conc_mg_ml = st.number_input("Collagen concentration (mg/mL = µg/µL)", min_value=0.0, value=3.0)
+    col_conc_mg_ml = st.number_input("Collagen concentration (mg/mL = µg/µL)", min_value=0.0, value=4.1)
     col_mw = st.number_input("Collagen molar mass (g/mol)", min_value=1.0, value=300000.0)
-    hne_conc_mg_ml = st.number_input("HNE concentration (mg/mL = µg/µL)", min_value=0.0, value=1.0)
+    hne_conc_mg_ml = st.number_input("HNE concentration (mg/mL = µg/µL)", min_value=0.0, value=10.0)
     hne_mw = st.number_input("HNE molar mass (g/mol)", min_value=1.0, value=156.22)
 
 if st.button("Calculate"):
